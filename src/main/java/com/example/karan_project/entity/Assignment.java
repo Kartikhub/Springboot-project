@@ -21,7 +21,16 @@ public class Assignment {
 	private AssignmentCategory assignmentCategory;
 	private Long marks;
 	private Long weightage;
+	private String grade;
 	
+	public String getGrade() {
+		return grade;
+	}
+
+	public void setGrade(String grade) {
+		this.grade = grade;
+	}
+
 	@ManyToOne
 	@JoinColumn(name = "student_id")
 	private Student student;
